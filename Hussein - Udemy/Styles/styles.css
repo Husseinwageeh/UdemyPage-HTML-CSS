@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+#udemyLogo {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#udemy-logo:hover {
+  cursor: pointer;
+}
+
+.bar {
+  position: relative;
+  width: 50%;
+  border-radius: 100px;
+  border: 1px solid black;
+  display: inline;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.searchbar {
+  height: 45px;
+  border: none;
+  width: 500px;
+  font-size: 14px;
+  outline: none;
+  margin-left: 60px;
+}
+
+#magnifier {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 5px;
+  top: 3px;
+  cursor: not-allowed;
+}
+
+.toppers {
+  font-size: 0.87em;
+  margin-left: 15px;
+}
+
+.toppers:hover {
+  color: #5624d0;
+  cursor: pointer;
+}
+
+.cart {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  margin-top: 8px;
+  background: url("Images/shopping_cart.png") no-repeat;
+}
+
+.cart:hover {
+  background: url("Images/shopping_cart_colored.png") no-repeat;
+  cursor: pointer;
+}
+
+.button {
+  height: 2.5rem;
+  width: fit-content;
+  font-size: 0.82em;
+  font-weight: bold;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 5px;
+}
+
+.button_explore {
+  height: 2.5rem;
+  width: fit-content;
+  font-size: 0.82em;
+  font-weight: bold;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 5px;
+}
+
+#login {
+  border: 1px solid black;
+}
+
+#signUp {
+  background-color: black;
+  color: white;
+}
+
+#login:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+#globe {
+  border: 1px solid black;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+#globe:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.center {
+  width: 1340px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.txt_bckgrnd {
+  width: 450px;
+  height: 180px;
+  position: absolute;
+  background-color: white;
+  margin-left: 70px;
+  box-shadow: 0 0 5px 2px #979da6;
+  display: flex;
+  flex-direction: column;
+}
+
+#headline {
+  margin-left: 20px;
+  font-size: 35px;
+  margin: 20px;
+}
+
+#textline {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 2px;
+  max-width: 350px;
+}
+
+.mainScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  box-shadow: 4px 0 0 0 rgb(0 0 0 / 20%);
+  margin-bottom: 10px;
+}
+
+.courses {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+.courses h1 {
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol;
+  margin-bottom: 15px;
+}
+
+.courses p {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.courses li {
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: bold;
+  list-style: none;
+  display: inline;
+  margin: 5px;
+  color: #6a6f73;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+li#active {
+  color: black;
+  cursor: context-menu;
+}
+
+ul :hover {
+  color: black;
+}
+
+.mainBox {
+  border: 1px solid #d1d7dc;
+  padding: 2rem;
+  margin-top: 30px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.mainBox h2 {
+  margin-bottom: 5px;
+}
+
+.mainBox p {
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.mainBox #login {
+  margin: 20px 0 20px 0;
+}
+
+.courseList {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px 5px 5px 0;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  width: 18%;
+  cursor: pointer;
+}
+
+.course .courseName {
+  font-weight: bold;
+}
+
+.course .courseAuthor {
+  color: #6a6f73;
+  font-size: smaller;
+  margin-bottom: 3px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.star-rate {
+  height: 20px;
+  width: 20px;
+}
+
+.starRank {
+  color: #f3bd0a;
+  font-weight: bolder;
+}
+
+.reviews {
+  color: #6a6f73;
+  font-size: small;
+}
+
+.price p {
+  font-weight: bold;
+  display: inline;
+}
+
+.price del {
+  color: #6a6f73;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 30px;
+  height: 275px;
+  background-color: #1c1d1f;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer ul {
+  margin-right: 90px;
+  position: relative;
+}
+
+.footer li {
+  font-size: 0.87em;
+  list-style: none;
+  color: white;
+  margin: 15px;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#language {
+  position: absolute;
+  background-color: rebeccapurple;
+}
+
+.menu_bar {
+  display: none;
+}
+
+
+@media (max-width:600px) {
+  .toppers {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .menu_bar {
+    display: block;
+    margin-right: 430px;
+  }
+
+  .center {
+    flex-direction: column;
+  }
+
+  .txt_bckgrnd {
+    margin-top: 400px;
+    box-shadow: none;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 30px;
+  }
+
+  .courses {
+    margin-top: 200px;
+  }
+
+  #header {
+    flex-direction: row-reverse;
+  }
+}
